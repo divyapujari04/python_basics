@@ -1,0 +1,60 @@
+    #user input & concatination 
+name = input("What is your name?")
+superhero_name = input("What is your superhero name?")
+print("My name is " + name + " and my superhero name is" + superhero_name)
+
+
+    #Typercasting and Sum of numbers
+First = input("Enter first num: ")
+Second = input("Enter second num: ")
+sum = int(First) + int(Second)
+print("Sum is " + str(sum))
+
+
+    #strings
+name = "Tony Stark"
+print(name.upper())
+print(name.find('K'))
+    #if found: returns index.     if not found: returns -1.      Small and caps are counted. 
+print(name.replace("Stark", "Ironman"))
+
+
+    #arithmatic operators
+# +
+# -
+# *
+# /
+print(5//2) #no decimal printed
+    #Modular/remainder operators: Prints remainder
+print(5%2) 
+    #Power operators
+print(5**2)
+
+
+    #shortcuts
+i = 6
+i += 2
+i -= 2
+i *= 4
+i //= 3
+print(i)
+
+
+    #Logical operator 
+    #OR: if at least one is true, output is true
+print(2>3 or 2>1)
+    #AND: iff both conditions are true, output is true
+print(3>2 and 5>4)
+    #NOT: true becomes false and false becomes true
+print(not 4>3)
+
+
+    #IF-ELSE
+age = input("enter your age: ")
+age = int(age)
+if age >= 18:
+    print("You are an adult, you can vote")
+elif age < 18 and age > 3:
+    print("You are a minor")
+else:
+    print("You are a kid")
