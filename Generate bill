@@ -1,0 +1,10 @@
+m = int(input("Enter no. of pizzas: "))
+n = int(input("Enter no. of puffs: "))
+o = int(input("Enter no. of cold drinks: "))
+
+price_pizz = m*100
+price_puff = n*20
+price_cd = o*10
+
+Bill = price_pizz + price_puff + price_cd
+print(Bill)
