@@ -1,0 +1,16 @@
+quantity = int(input("Enter the quant in liters: "))
+distance = int(input("Enter the dist in kilo: "))
+
+if quantity <= 0 or distance <= 0:
+    print("Invalid")
+    
+else:
+    liters_per_100km = (quantity/distance)*100
+    
+print(liters_per_100km, "lpk")
+
+miles = distance*0.62
+gallons = quantity*0.26
+mpg = miles/gallons
+
+print(mpg, "mpg")
