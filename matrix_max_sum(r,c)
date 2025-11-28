@@ -1,0 +1,37 @@
+R = int(input("Enter no. of rows: "))
+C = int(input("Enter no.of col: "))
+
+print(R,C)
+
+matrix = []
+
+for i in range(R):
+    a = []
+    for j in range(C):
+        a.append(int(input()))
+    matrix.append(a)
+        
+for i in range(R):
+    for j in range(C):
+        print(matrix[i][j])
+    print()
+    
+    
+max_sumr = 0
+for i in range(R):
+    s = sum(matrix[i])
+    if s > max_sumr:
+        max_sumr = s
+        
+max_sumc = 0
+for j in range(C):
+    t = 0
+    for i in range(R):
+        t += matrix[i][j]
+        if t > max_sumc:
+            max_sumc = t
+        
+        
+lucky_number = max_sumc + max_sumr
+
+print(lucky_number)
